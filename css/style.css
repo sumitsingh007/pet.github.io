@@ -1,62 +1,4 @@
-/*
 
-Template: Hi-soft - IT Solutions and Services Company HTML5 Template
-Version: 1.0
-Author: potenzaglobalsolutions
-Design and Developed by: potenzaglobalsolutions.com
-
-NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
-
-*/
-/*================================================
-[  Table of contents  ]
-================================================
-
- :: Typography
- :: Helper Classes
- :: Shortcodes
-  	- Accordion
-  	- Button
-  	- Case Study
-    - Category
-    - Client
-    - Countdown
-    - Counter
-    - Feature Info
-    - Form Control
-    - List style
-    - Newsletter
-    - Owl Carousel
-    - Portfolio
-    - Pricing Table
-    - Progress Bar
-    - Tabs
-    - Team
-    - Testimonial
-    - Timeline
- :: Header
-   - Header
-   - Header Style 02
-   - Header Style 03
-   - Header Transparent
- :: Banner
-   - Banner
-   - banner 02
-   - banner 03
- :: Layout
-   - Section Title
-   - Sticky column
-   - Header Inner
- :: Blog
-   - Blog
-   - blog post sticky
- :: Not Found
- :: Footer
- :: Responsive
-
-======================================
-[ End table content ]
-======================================*/
 /*****************************
   Typography
 *****************************/
@@ -624,11 +566,24 @@ hr.light-bg {
   width: 100%;
 height: 85vh; }
 
+/* img holder */
+.bg-holder-small {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;}
+
 .second-heading{
   color: #fff;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: overline;
+}
+
+.feature-info-style-08 {
+  padding: 20px;
+  background: #f94f2e;
+  border-radius: 5px;
 }
 
 .head-li-a li{
@@ -708,7 +663,7 @@ height: 85vh; }
   position: relative;
   z-index: 1; }
   .bg-overlay-black-50:before {
-    background: rgba(2, 45, 98, 0.5);
+    background: transparent;
     content: "";
     height: 100%;
     left: 0;
@@ -1356,7 +1311,7 @@ height: 85vh; }
 
 /* Style 03 */
 .feature-info-style-03 {
-  padding: 45px;
+  padding: 15px;
   background: #f6f6f6;
   border-radius: 5px; }
 
@@ -1619,7 +1574,7 @@ height: 85vh; }
 
 @media (max-width: 991px) {
   .feature-info-style-03 {
-    padding: 20px; }
+    padding: 10px; }
   .feature-info-style-04 {
     padding: 45px 15px; }
   .feature-info-style-05 .feature-info-icon {
@@ -2984,11 +2939,27 @@ ul.category-list li a:after,
   .category-grid-style-01 .category-item {
     padding: 30px;
     text-align: center;
-    width: 16.6666%;
+    width: 33.33%;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     position: relative;
     cursor: pointer; }
+
+    .category-grid-style-01 .category-item-big {
+      padding: 30px;
+      text-align: left;
+      width: 66.66%;
+      background-color: #f94f2e;
+      color: #fff;
+      border-right: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+      position: relative;
+      cursor: pointer; }
+
+      .category-item-big a{
+        color: #ffffff;
+      }
+
     .category-grid-style-01 .category-item:nth-child(6n+0) {
       border-right: none; }
     .category-grid-style-01 .category-item:before {
@@ -3212,7 +3183,15 @@ ul.category-list {
     width: 33.3333%;
     margin-bottom: 35px; }
     .category-grid-style-02 ul li a {
-      padding-bottom: 25px; } }
+      padding-bottom: 25px; }
+      .category-grid-style-01 .category-item-big {
+        width: 100%;
+      text-align: center; }
+  
+        .category-item-big a{
+          color: #ffffff;
+        }
+    }
 
 @media (max-width: 767px) {
   .category-grid-style-01 .category-item {
@@ -3227,7 +3206,16 @@ ul.category-list {
     width: 50%;
     margin-bottom: 25px; }
     .category-grid-style-02 ul li a {
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+    
+      .category-grid-style-01 .category-item-big {
+        width: 100%;
+      text-align: center; }
+  
+        .category-item-big a{
+          color: #ffffff;
+        }
+      }
 
 @media (max-width: 575px) {
   .category-grid-style-01 .category-item {
@@ -3238,7 +3226,17 @@ ul.category-list {
       border-right: none; }
   .category-grid-style-02 ul li {
     width: 100%;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  
+    .category-grid-style-01 .category-item-big {
+      width: 100%;
+    text-align: center; }
+
+      .category-item-big a{
+        color: #ffffff;
+      }
+  
+  }
 
 /*****************************
   Client
@@ -4599,13 +4597,13 @@ ul.category-list {
 .header-inner .header-inner-nav.page-menu-top {
   position: fixed;
   width: 100%;
-  background: #262626;
+  background: #f94f2e;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  top: 70px;
+  top: 80px;
   -webkit-animation: stickySlideDown 0.85s cubic-bezier(0.23, 1, 0.32, 1) both;
           animation: stickySlideDown 0.85s cubic-bezier(0.23, 1, 0.32, 1) both;
-  padding: 5px 0; }
+  padding: 11px 0; }
 
 .header-inner .header-inner-nav.page-menu-top .nav li a {
   color: #ffffff;
@@ -5117,7 +5115,7 @@ ul.category-list {
 .back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   display: inline-block;
   font-size: 20px;
   color: #ffffff;
@@ -5249,7 +5247,7 @@ ul.category-list {
   padding-bottom: 0; }
 
 .header-inner-menu .header-inner-title {
-  margin-bottom: 80px; }
+  margin-bottom: 0px; }
 
 .header-inner .header-inner-nav {
   padding: 15px 0;
@@ -5263,7 +5261,9 @@ ul.category-list {
   border-radius: 5px; }
 
 .header-inner .header-inner-nav .nav li a.active {
-  background: #f94f2e; }
+  background: transparent;
+border: 2px solid #ffffff;
+}
 
 .contact-bg-logo {
   position: absolute;
